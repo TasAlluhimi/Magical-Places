@@ -5,6 +5,7 @@ import PlaceOne from '../Pages/PlaceOne'
 import PlaceTwo from '../Pages/PlaceTwo'
 import PlaceThree from '../Pages/PlaceThree'
 import PlaceFour from '../Pages/PlaceFour'
+import Error from '../Errors/Error'
 
 function Route() {
   return (
@@ -15,6 +16,7 @@ function Route() {
             <R path='/AntelopeCanyon' element={<PlaceTwo/>}></R>
             <R path='/Zhangjiajie' element={<PlaceThree/>}></R>
             <R path='/Plitvice' element={<PlaceFour/>}></R>
+            <R path='/*' element={<Error/>}></R>
         </Routes>
         
     </>
